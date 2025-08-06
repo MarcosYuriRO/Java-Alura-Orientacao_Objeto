@@ -47,7 +47,7 @@ public class Filme {
 
 
     public void exibaFichaTecnica(){
-        System.out.println("Nome do br.com.alura.ProjetoMain.modelos.Filme: " + nome);
+        System.out.println("Nome do Filme: " + nome);
         System.out.println("Ano de lançamento: " + anoDeLancamento);
     }
 
