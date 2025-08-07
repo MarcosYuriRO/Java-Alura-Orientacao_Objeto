@@ -1,3 +1,4 @@
+import br.com.alura.ProjetoMain.calculos.CalculadoraDeTempo;
 import br.com.alura.ProjetoMain.modelos.Filme;
 import br.com.alura.ProjetoMain.modelos.Serie;
 
@@ -27,5 +28,17 @@ public class Main {
         lost.setEpisodiosPorTemporada(9);
         lost.setMinutosPorEpisodio(50);
         System.out.println("Duração da Série: " + lost.getDuracaoEmMinutos());
+
+        Filme outroFilme = new Filme();
+        outroFilme.setNome("Avatar");
+        outroFilme.setAnoDeLancamento(2023);
+        outroFilme.setDuracaoEmMinutos(200);
+
+
+        CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
+        calculadora.inclui(meuFilme);
+        calculadora.inclui(outroFilme);
+        calculadora.inclui(lost);
+        System.out.println(calculadora.getTempoTotal());
     }
 }
